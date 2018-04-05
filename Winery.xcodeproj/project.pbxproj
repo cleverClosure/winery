@@ -8,22 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		391A68462072718E003CFE1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A68452072718E003CFE1B /* AppDelegate.swift */; };
-		391A68482072718E003CFE1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A68472072718E003CFE1B /* ViewController.swift */; };
-		391A684B2072718E003CFE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391A68492072718E003CFE1B /* Main.storyboard */; };
+		391A68482072718E003CFE1B /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A68472072718E003CFE1B /* PagesViewController.swift */; };
 		391A684E2072718E003CFE1B /* Winery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 391A684C2072718E003CFE1B /* Winery.xcdatamodeld */; };
 		391A685020727191003CFE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391A684F20727191003CFE1B /* Assets.xcassets */; };
 		391A685320727191003CFE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391A685120727191003CFE1B /* LaunchScreen.storyboard */; };
+		391A685C20727A02003CFE1B /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A685B20727A02003CFE1B /* PageItemController.swift */; };
+		391A685E20728F83003CFE1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A685D20728F83003CFE1B /* Constants.swift */; };
+		391A686020729740003CFE1B /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A685F20729740003CFE1B /* UIColor+extensions.swift */; };
+		391A686220729EDF003CFE1B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A686120729EDF003CFE1B /* CardView.swift */; };
+		391A686F20736069003CFE1B /* Ultima Alt Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A68682073605F003CFE1B /* Ultima Alt Bold.ttf */; };
+		391A687020736069003CFE1B /* Ultima Alt Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A68662073605E003CFE1B /* Ultima Alt Light.ttf */; };
+		391A687120736069003CFE1B /* Ultima Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A68692073605F003CFE1B /* Ultima Alt.ttf */; };
+		391A687220736069003CFE1B /* Ultima Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A686D20736060003CFE1B /* Ultima Black.ttf */; };
+		391A687320736069003CFE1B /* Ultima Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A686E20736060003CFE1B /* Ultima Bold Italic.ttf */; };
+		391A687420736069003CFE1B /* Ultima Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A686B20736060003CFE1B /* Ultima Bold.ttf */; };
+		391A687520736069003CFE1B /* Ultima Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A68652073605E003CFE1B /* Ultima Italic.ttf */; };
+		391A687620736069003CFE1B /* Ultima Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A68672073605F003CFE1B /* Ultima Light Italic.ttf */; };
+		391A687720736069003CFE1B /* Ultima Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A686A2073605F003CFE1B /* Ultima Light.ttf */; };
+		391A687820736069003CFE1B /* Ultima.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391A686C20736060003CFE1B /* Ultima.ttf */; };
+		391A687A2073B1D5003CFE1B /* wines.json in Resources */ = {isa = PBXBuildFile; fileRef = 391A68792073B1D4003CFE1B /* wines.json */; };
+		391A687C2073B753003CFE1B /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A687B2073B753003CFE1B /* Wine.swift */; };
+		391A687E2073D3DD003CFE1B /* WineFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A687D2073D3DD003CFE1B /* WineFetcher.swift */; };
+		790B07E7E707D0EE630E73AC /* Pods_Winery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936EC1EC244439E2F0C167B8 /* Pods_Winery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		391A68422072718E003CFE1B /* Winery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		391A68452072718E003CFE1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		391A68472072718E003CFE1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		391A684A2072718E003CFE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		391A68472072718E003CFE1B /* PagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
 		391A684D2072718E003CFE1B /* Winery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Winery.xcdatamodel; sourceTree = "<group>"; };
 		391A684F20727191003CFE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		391A685220727191003CFE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		391A685420727191003CFE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391A685B20727A02003CFE1B /* PageItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
+		391A685D20728F83003CFE1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		391A685F20729740003CFE1B /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
+		391A686120729EDF003CFE1B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		391A68652073605E003CFE1B /* Ultima Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultima Italic.ttf"; sourceTree = "<group>"; };
+		391A68662073605E003CFE1B /* Ultima Alt Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultima Alt Light.ttf"; sourceTree = "<group>"; };
+		391A68672073605F003CFE1B /* Ultima Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultima Light Italic.ttf"; sourceTree = "<group>"; };
+		391A68682073605F003CFE1B /* Ultima Alt Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultima Alt Bold.ttf"; sourceTree = "<group>"; };
+		391A68692073605F003CFE1B /* Ultima Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultima Alt.ttf"; sourceTree = "<group>"; };
+		391A686A2073605F003CFE1B /* Ultima Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultima Light.ttf"; sourceTree = "<group>"; };
+		391A686B20736060003CFE1B /* Ultima Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultima Bold.ttf"; sourceTree = "<group>"; };
+		391A686C20736060003CFE1B /* Ultima.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ultima.ttf; sourceTree = "<group>"; };
+		391A686D20736060003CFE1B /* Ultima Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultima Black.ttf"; sourceTree = "<group>"; };
+		391A686E20736060003CFE1B /* Ultima Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultima Bold Italic.ttf"; sourceTree = "<group>"; };
+		391A68792073B1D4003CFE1B /* wines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wines.json; sourceTree = "<group>"; };
+		391A687B2073B753003CFE1B /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
+		391A687D2073D3DD003CFE1B /* WineFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineFetcher.swift; sourceTree = "<group>"; };
+		7DE810FE0EE80516786BB0EC /* Pods-Winery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Winery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Winery/Pods-Winery.debug.xcconfig"; sourceTree = "<group>"; };
+		936EC1EC244439E2F0C167B8 /* Pods_Winery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Winery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A8BC847ED55D36821B775A /* Pods-Winery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Winery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Winery/Pods-Winery.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790B07E7E707D0EE630E73AC /* Pods_Winery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +79,8 @@
 			children = (
 				391A68442072718E003CFE1B /* Winery */,
 				391A68432072718E003CFE1B /* Products */,
+				4205E17717E3C929D9F4E73F /* Pods */,
+				A15CAC3ADE6CC34CC6220133 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +96,63 @@
 			isa = PBXGroup;
 			children = (
 				391A68452072718E003CFE1B /* AppDelegate.swift */,
-				391A68472072718E003CFE1B /* ViewController.swift */,
-				391A68492072718E003CFE1B /* Main.storyboard */,
+				391A68472072718E003CFE1B /* PagesViewController.swift */,
+				391A685B20727A02003CFE1B /* PageItemController.swift */,
+				391A685D20728F83003CFE1B /* Constants.swift */,
+				391A687B2073B753003CFE1B /* Wine.swift */,
+				391A687D2073D3DD003CFE1B /* WineFetcher.swift */,
+				391A686120729EDF003CFE1B /* CardView.swift */,
+				391A685F20729740003CFE1B /* UIColor+extensions.swift */,
+				391A686320736045003CFE1B /* Fonts */,
 				391A684F20727191003CFE1B /* Assets.xcassets */,
 				391A685120727191003CFE1B /* LaunchScreen.storyboard */,
 				391A685420727191003CFE1B /* Info.plist */,
 				391A684C2072718E003CFE1B /* Winery.xcdatamodeld */,
+				391A68792073B1D4003CFE1B /* wines.json */,
 			);
 			path = Winery;
+			sourceTree = "<group>";
+		};
+		391A686320736045003CFE1B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				391A68642073604E003CFE1B /* Ultima */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		391A68642073604E003CFE1B /* Ultima */ = {
+			isa = PBXGroup;
+			children = (
+				391A68682073605F003CFE1B /* Ultima Alt Bold.ttf */,
+				391A68662073605E003CFE1B /* Ultima Alt Light.ttf */,
+				391A68692073605F003CFE1B /* Ultima Alt.ttf */,
+				391A686D20736060003CFE1B /* Ultima Black.ttf */,
+				391A686E20736060003CFE1B /* Ultima Bold Italic.ttf */,
+				391A686B20736060003CFE1B /* Ultima Bold.ttf */,
+				391A68652073605E003CFE1B /* Ultima Italic.ttf */,
+				391A68672073605F003CFE1B /* Ultima Light Italic.ttf */,
+				391A686A2073605F003CFE1B /* Ultima Light.ttf */,
+				391A686C20736060003CFE1B /* Ultima.ttf */,
+			);
+			path = Ultima;
+			sourceTree = "<group>";
+		};
+		4205E17717E3C929D9F4E73F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DE810FE0EE80516786BB0EC /* Pods-Winery.debug.xcconfig */,
+				C2A8BC847ED55D36821B775A /* Pods-Winery.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A15CAC3ADE6CC34CC6220133 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				936EC1EC244439E2F0C167B8 /* Pods_Winery.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 391A685720727191003CFE1B /* Build configuration list for PBXNativeTarget "Winery" */;
 			buildPhases = (
+				E6111656F044AC84BC73EA1E /* [CP] Check Pods Manifest.lock */,
 				391A683E2072718E003CFE1B /* Sources */,
 				391A683F2072718E003CFE1B /* Frameworks */,
 				391A68402072718E003CFE1B /* Resources */,
+				F00B18DF19D7D071516C8723 /* [CP] Embed Pods Frameworks */,
+				8D9A62681B470A9A82AE7E63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,36 +216,102 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391A687520736069003CFE1B /* Ultima Italic.ttf in Resources */,
+				391A687720736069003CFE1B /* Ultima Light.ttf in Resources */,
+				391A687420736069003CFE1B /* Ultima Bold.ttf in Resources */,
+				391A686F20736069003CFE1B /* Ultima Alt Bold.ttf in Resources */,
+				391A687020736069003CFE1B /* Ultima Alt Light.ttf in Resources */,
 				391A685320727191003CFE1B /* LaunchScreen.storyboard in Resources */,
+				391A687820736069003CFE1B /* Ultima.ttf in Resources */,
+				391A687620736069003CFE1B /* Ultima Light Italic.ttf in Resources */,
+				391A687A2073B1D5003CFE1B /* wines.json in Resources */,
+				391A687120736069003CFE1B /* Ultima Alt.ttf in Resources */,
 				391A685020727191003CFE1B /* Assets.xcassets in Resources */,
-				391A684B2072718E003CFE1B /* Main.storyboard in Resources */,
+				391A687220736069003CFE1B /* Ultima Black.ttf in Resources */,
+				391A687320736069003CFE1B /* Ultima Bold Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D9A62681B470A9A82AE7E63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Winery/Pods-Winery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6111656F044AC84BC73EA1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Winery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F00B18DF19D7D071516C8723 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Winery/Pods-Winery-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Winery/Pods-Winery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		391A683E2072718E003CFE1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391A687C2073B753003CFE1B /* Wine.swift in Sources */,
+				391A687E2073D3DD003CFE1B /* WineFetcher.swift in Sources */,
+				391A686220729EDF003CFE1B /* CardView.swift in Sources */,
+				391A685E20728F83003CFE1B /* Constants.swift in Sources */,
 				391A684E2072718E003CFE1B /* Winery.xcdatamodeld in Sources */,
-				391A68482072718E003CFE1B /* ViewController.swift in Sources */,
+				391A68482072718E003CFE1B /* PagesViewController.swift in Sources */,
 				391A68462072718E003CFE1B /* AppDelegate.swift in Sources */,
+				391A685C20727A02003CFE1B /* PageItemController.swift in Sources */,
+				391A686020729740003CFE1B /* UIColor+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		391A68492072718E003CFE1B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				391A684A2072718E003CFE1B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		391A685120727191003CFE1B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +439,7 @@
 		};
 		391A685820727191003CFE1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE810FE0EE80516786BB0EC /* Pods-Winery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +458,7 @@
 		};
 		391A685920727191003CFE1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A8BC847ED55D36821B775A /* Pods-Winery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

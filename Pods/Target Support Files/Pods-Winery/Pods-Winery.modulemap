@@ -1,0 +1,6 @@
+framework module Pods_Winery {
+  umbrella header "Pods-Winery-umbrella.h"
+
+  export *
+  module * { export * }
+}

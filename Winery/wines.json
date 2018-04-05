@@ -1,0 +1,21 @@
+[
+	{
+		"name":"calcinaires",
+		"title":"Les Calcinaires Rouge",
+		"subtitle":"Domaine Gauby",
+		"price": 35.0
+	},
+	{
+		"name":"coursodon",
+		"title":"Coursodon",
+		"subtitle":"Saint Joseph",
+		"price": 32.0
+	},
+	{
+		"name":"simone",
+		"title":"Château Simone",
+		"subtitle":"White - Green and Flinty",
+		"price": 41.0
+	},
+
+]

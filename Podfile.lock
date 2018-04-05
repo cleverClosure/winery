@@ -1,0 +1,18 @@
+PODS:
+  - Cartography (3.0.1)
+  - Pageboy (2.4.0)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Cartography (~> 3.0)
+  - Pageboy (~> 2.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Cartography: f8c899bb0f5cf20758644a8eea59a75e98a03a5d
+  Pageboy: b04cee5c1315a865fb49321129d12635e8465144
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 31617bb418a54fd975b8b52fdce6bd9294fe9498
+
+COCOAPODS: 1.4.0
