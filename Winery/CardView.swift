@@ -129,10 +129,7 @@ class CardView: UIView {
             buyButton.centerX == buyButton.superview!.centerX
             buyButton.width == buyButton.superview!.width * 0.5
         }
-        
-        constrain(wineView, replace: wineCenterXConstrainGroup) { wineView in
-            wineView.centerX == wineView.superview!.centerX
-        }
+        setBottleForFinalPosition()
     }
     
     func updateData() {
@@ -146,16 +143,23 @@ class CardView: UIView {
     }
     
     func animateAfterScroll() {
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: [.curveEaseInOut], animations: { [unowned self] in
+            self.setBottleForFinalPosition()
+        }, completion: nil)
+    }
+    
+    func setBottleToInitialPosition() {
         constrain(wineView, replace: wineCenterXConstrainGroup) { wineView in
-            wineView.centerX == wineView.superview!.centerX - 10
+            wineView.centerX == wineView.superview!.centerX - 20
         }
         self.layoutIfNeeded()
-        UIView.animate(withDuration: 0.5, delay: 0.0, options: [.curveEaseInOut], animations: { [unowned self] in
-            constrain(self.wineView, replace: self.wineCenterXConstrainGroup) { wineView in
-                wineView.centerX == wineView.superview!.centerX
-            }
-            self.layoutIfNeeded()
-        }, completion: nil)
+    }
+    
+    func setBottleForFinalPosition() {
+        constrain(wineView, replace: wineCenterXConstrainGroup) { wineView in
+            wineView.centerX == wineView.superview!.centerX
+        }
+        self.layoutIfNeeded()
     }
 
 

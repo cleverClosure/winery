@@ -45,5 +45,14 @@ class PageItemController: UIViewController {
     func animateCardViewAfterScroll() {
         cardView.animateAfterScroll()
     }
+    
+    func prepareCardForAnimation() {
+        cardView.setBottleToInitialPosition()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+    }
 
 }

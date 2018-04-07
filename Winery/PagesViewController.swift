@@ -11,8 +11,15 @@ import Pageboy
 
 class PagesViewController: PageboyViewController {
     
-    var colors: [UIColor] = {
-        return [UIColor(hex: 0xffbe76), UIColor(hex: 0xbadc58), UIColor(hex: 0xe17055)]
+    var pages: [PageItemController] = {
+        let colors = [UIColor(hex: 0xffbe76), UIColor(hex: 0xbadc58), UIColor(hex: 0xe17055)]
+        var pages = [PageItemController]()
+        for color in colors {
+            let page = PageItemController()
+            page.view.backgroundColor = color
+            pages.append(page)
+        }
+        return pages
     }()
     
     var wines = [Wine]() {
@@ -38,24 +45,18 @@ class PagesViewController: PageboyViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getPageAt(index: Int) -> PageItemController {
-        let pageItemVC = PageItemController()
-        pageItemVC.view.backgroundColor = self.colors[index]
-        pageItemVC.wine = wines[index]
-        return pageItemVC
-    }
 
 }
 
 extension PagesViewController: PageboyViewControllerDataSource {
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
-        return wines.count
+        return pages.count
     }
     
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
         
-        return getPageAt(index: index)
+        return pages[index]
     }
     
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
@@ -65,11 +66,25 @@ extension PagesViewController: PageboyViewControllerDataSource {
 
 extension PagesViewController: PageboyViewControllerDelegate {
     
+    func pageboyViewController(_ pageboyViewController: PageboyViewController, willScrollToPageAt index: Int, direction: PageboyViewController.NavigationDirection, animated: Bool) {
+        print("st ", pageboyViewController.currentIndex, self.lastPageIndex)
+        var newIndex = index
+        switch direction {
+        case PageboyViewController.NavigationDirection.forward:
+            newIndex = min(index + 1, pages.count - 1)
+        case PageboyViewController.NavigationDirection.forward:
+            newIndex = max(index - 1, 0)
+        default:
+            break
+        }
+        
+        pages[index].prepareCardForAnimation()
+    }
+    
     func pageboyViewController(_ pageboyViewController: PageboyViewController, didScrollToPageAt index: Int, direction: PageboyViewController.NavigationDirection, animated: Bool) {
         guard let currentIndex = pageboyViewController.currentIndex, currentIndex != self.lastPageIndex else {
             return
         }
-        print(lastPageIndex, currentIndex)
         if let page = pageboyViewController.currentViewController as? PageItemController {
             page.animateCardViewAfterScroll()
         }
