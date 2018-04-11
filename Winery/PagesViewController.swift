@@ -11,11 +11,12 @@ import Pageboy
 
 class PagesViewController: PageboyViewController {
     
-    var pages: [PageItemController] = {
+   lazy var pages: [PageItemController] = {
         let colors = [UIColor(hex: 0xffbe76), UIColor(hex: 0xbadc58), UIColor(hex: 0xe17055)]
         var pages = [PageItemController]()
         for color in colors {
             let page = PageItemController()
+            page.delegate = self
             page.view.backgroundColor = color
             pages.append(page)
         }
@@ -24,6 +25,9 @@ class PagesViewController: PageboyViewController {
     
     var wines = [Wine]() {
         didSet {
+            for i in 0..<wines.count {
+                pages[i].wine = wines[i]
+            }
             self.reloadPages()
         }
     }
@@ -53,9 +57,7 @@ extension PagesViewController: PageboyViewControllerDataSource {
         return pages.count
     }
     
-    func viewController(for pageboyViewController: PageboyViewController,
-                        at index: PageboyViewController.PageIndex) -> UIViewController? {
-        
+    func viewController(for pageboyViewController: PageboyViewController, at index: PageboyViewController.PageIndex) -> UIViewController? {
         return pages[index]
     }
     
@@ -67,17 +69,16 @@ extension PagesViewController: PageboyViewControllerDataSource {
 extension PagesViewController: PageboyViewControllerDelegate {
     
     func pageboyViewController(_ pageboyViewController: PageboyViewController, willScrollToPageAt index: Int, direction: PageboyViewController.NavigationDirection, animated: Bool) {
-        print("st ", pageboyViewController.currentIndex, self.lastPageIndex)
+        
         var newIndex = index
         switch direction {
         case PageboyViewController.NavigationDirection.forward:
             newIndex = min(index + 1, pages.count - 1)
-        case PageboyViewController.NavigationDirection.forward:
+        case PageboyViewController.NavigationDirection.reverse:
             newIndex = max(index - 1, 0)
         default:
             break
         }
-        
         pages[index].prepareCardForAnimation()
     }
     
@@ -92,3 +93,8 @@ extension PagesViewController: PageboyViewControllerDelegate {
     }
 }
 
+extension PagesViewController: PageDelegate {
+    func didEnterDetailMode(val: Bool) {
+        self.isScrollEnabled = val
+    }
+}

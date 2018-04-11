@@ -25,8 +25,9 @@ class WineFetcher {
                     if let name = jsonWine["name"].string,
                     let title = jsonWine["title"].string,
                     let subtitle = jsonWine["subtitle"].string,
+                    let description = jsonWine["description"].string,
                     let price = jsonWine["price"].float {
-                        let wine = Wine(name: name, title: title, subtitle: subtitle, price: price)
+                        let wine = Wine(name: name, title: title, subtitle: subtitle, description: description,  price: price)
                         wines.append(wine)
                     }
                 }

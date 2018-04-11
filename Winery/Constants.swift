@@ -9,7 +9,6 @@
 import UIKit
 
 enum Constants {
-    enum PageItem {
-        static let cardViewWidthMultiplier: CGFloat = 0.8
-    }
+    static let cardViewWidthMultiplier: CGFloat = 0.8
+    static let animationSpeed = 0.28
 }

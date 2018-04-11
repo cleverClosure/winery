@@ -3,18 +3,21 @@
 		"name":"calcinaires",
 		"title":"Les Calcinaires Rouge",
 		"subtitle":"Domaine Gauby",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
 		"price": 35.0
 	},
 	{
 		"name":"coursodon",
 		"title":"Coursodon",
 		"subtitle":"Saint Joseph",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
 		"price": 32.0
 	},
 	{
 		"name":"simone",
 		"title":"Château Simone",
 		"subtitle":"White - Green and Flinty",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
 		"price": 41.0
 	},
 

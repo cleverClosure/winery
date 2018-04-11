@@ -13,12 +13,14 @@ struct Wine {
     var name: String
     var title: String
     var subtitle: String
+    var description: String
     var price: Float
     
-    init(name: String, title: String, subtitle: String, price: Float) {
+    init(name: String, title: String, subtitle: String, description: String, price: Float) {
         self.name = name
         self.title = title
         self.subtitle = subtitle
         self.price = price
+        self.description = description
     }
 }
